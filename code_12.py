@@ -10,11 +10,11 @@ def get_fibonacci_number_sequence(number):
     if number == 0:
         return [0]
     elif number == 1:
-        return [0, 1]
+        return [1]
     
-    prev1 = 0  
+    prev1 = 1 
     prev2 = 1  
-    number_sequence = [0, 1]
+    number_sequence = [1, 1]
 
     # Had to make a correction in my identation for return.
     for i in range(2, number):
@@ -29,5 +29,5 @@ if __name__ == "__main__":
     position = 5
     print(f"The fibonacci number for position {position} is {get_fibonacci_number(position)}")
     
-    number = 7
+    number = 10
     print(f"The fibonacci sequence for {number} is {get_fibonacci_number_sequence(number)}")
