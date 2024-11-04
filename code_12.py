@@ -6,6 +6,8 @@ def get_fibonacci_number(position):
     
     return get_fibonacci_number(position - 1) + get_fibonacci_number(position - 2)
 
+
+# Had to change this sequence to start at 1 rather than 0.
 def get_fibonacci_number_sequence(number):
     if number == 0:
         return [0]
